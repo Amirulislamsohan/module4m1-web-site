@@ -3,21 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>practice site </title><style>
-        table{border-collapse: collapse;}thead{
+        table{border-collapse: collapse;
+        margin: auto;
+        margin-top: 50px;
+
+        width: 80%;
+        }thead{
             font-size: large;
             font-weight: bold;
+            text-align: justify;
+            
+
         }
         td{
             padding: 5px;
+            text-align: justify;
+        }
+        .checkbox{
+            display: flex;
+            margin: auto;
+            /* margin-inline-start: 11%; */
+        }
+        form{
+            /* field-sizing: 50%; */
+            /* border: 1px solid ; */
+            text-align: left;
+            margin: 0 20%;
+        }
+        fieldset{
+            padding: 20px 40px;
+            border: 3px solid gray;
+            background-color: bisque;
+
+        }
+        .sub-btn{
+            padding: 5px 10px;
+            font-weight: bold;
+            margin: 0 40%;
         }
     </style>
   </head>
   <body>
     <header>
-        <h1>This is my practice table</h1>
+        
     </header>
-    <main>
-        <section>
+    <main style="text-align: center; ">
+        <section><h1>This is my practice table</h1>
             <table border="1px solid ">
                 <thead>
                     <tr>
@@ -63,6 +94,35 @@
               
             </table>
         </section>
+        <section >
+            <h1>Here is My Practicing Form</h1>
+            <form>
+                
+            <fieldset>
+                <legend>Practice Form</legend>
+                <p>First name:
+                    <input type="text" name="" id="">
+                </p>
+                <p>
+                    Last name:
+                    <input type="text" name="" id="">
+                </p>
+                <div class="checkbox">
+                    <p><input type="checkbox" name="" id="">  Male</p>
+                <p><input type="checkbox" name="" id="">  Female</p>
+                </div>
+                <p>Employee ID: <input type="text" name="" id=""></p>
+                <p>Designation: <input type="text" name="" id=""></p>
+                <p>Phone Number: <input type="text" name="" id=""></p>
+                <input class="sub-btn" type="submit" value="submit">
+            </fieldset>
+                
+           
+            </form>
+        </section>
+            
+          
+       
     </main>
   </body>
 </html>
