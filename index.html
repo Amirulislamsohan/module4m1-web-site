@@ -40,6 +40,8 @@
             padding: 5px 10px;
             font-weight: bold;
             margin: 0 40%;
+            display: flex;
+            margin-left: 10px;
         }
     </style>
   </head>
@@ -101,20 +103,27 @@
             <fieldset>
                 <legend>Practice Form</legend>
                 <p>First name:
-                    <input type="text" name="" id="">
+                    <input placeholder="enter your name" type="text" name="" id="">
                 </p>
                 <p>
                     Last name:
-                    <input type="text" name="" id="">
+                    <input placeholder="enter your name" type="text" name="" id="">
                 </p>
                 <div class="checkbox">
-                    <p><input type="checkbox" name="" id="">  Male</p>
-                <p><input type="checkbox" name="" id="">  Female</p>
+                   <label for="male">
+                    <p><input type="radio" name="gender" id="male">  Male</p>
+                   </label>
+                <label for="female"><p><input type="radio" name="gender" id="female">  Female</p></label>
                 </div>
                 <p>Employee ID: <input type="text" name="" id=""></p>
                 <p>Designation: <input type="text" name="" id=""></p>
                 <p>Phone Number: <input type="text" name="" id=""></p>
-                <input class="sub-btn" type="submit" value="submit">
+               
+                <div  class="sub-btn" >
+                     <input type="reset" value="Reset">
+                     <input type="submit" value="Submit">
+                </div>
+
             </fieldset>
                 
            
