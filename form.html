@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+           .checkbox{
+            display: flex;
+            margin: auto;
+            /* margin-inline-start: 11%; */
+        }
+        form{
+            /* field-sizing: 50%; */
+            /* border: 1px solid ; */
+            text-align: left;
+            margin: 0 20%;
+        }
+        fieldset{
+            padding: 20px 40px;
+            border: 3px solid gray;
+            background-color: bisque;
+
+        }
+        .sub-btn{
+            padding: 5px 10px;
+            font-weight: bold;
+            margin: 0 40%;
+            display: flex;
+            margin-left: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="facebook.html">Facebook</a></li>
+            <li><a href="course.html">Course</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>Here is My Practicing Form</h1>
+        <form>
+            
+        <fieldset>
+            <legend>Practice Form</legend>
+            <p>First name:
+                <input placeholder="enter your name" type="text" name="" id="">
+            </p>
+            <p>
+                Last name:
+                <input placeholder="enter your name" type="text" name="" id="">
+            </p>
+            <div class="checkbox">
+               <label for="male">
+                <p><input type="radio" name="gender" id="male">  Male</p>
+               </label>
+            <label for="female"><p><input type="radio" name="gender" id="female">  Female</p></label>
+            </div>
+            <p>Employee ID: <input type="text" name="" id=""></p>
+            <p>Designation: <input type="text" name="" id=""></p>
+            <p>Phone Number: <input type="text" name="" id=""></p>
+           
+            <div  class="sub-btn" >
+                 <input type="reset" value="Reset">
+                 <input type="submit" value="Submit">
+            </div>
+
+        </fieldset>
+            
+       
+        </form>
+    </section>
+  </body>
+</html>
